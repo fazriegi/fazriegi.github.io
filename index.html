@@ -5,18 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <title>My Portfolio | Fazri Egi Ramadhan</title>
-  <script>
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  </script>
+  <title>Portfolio | Fazri Egi Ramadhan</title>
 </head>
 
 <body>
@@ -35,34 +24,16 @@
           </button>
 
           <nav id="nav-menu"
-            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:dark:bg-transparent dark:bg-slate-900 dark:shadow-slate-700">
+            class="hidden absolute py-5 bg-slate-900 shadow-slate-700 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent">
             <ul class="block lg:flex">
               <li class="group">
-                <a href="#home"
-                  class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                <a href="#home" class="text-base py-2 mx-8 flex group-hover:text-primary text-white">Beranda</a>
               </li>
               <li class="group">
-                <a href="#portfolio"
-                  class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                <a href="#skills" class="text-base py-2 mx-8 flex group-hover:text-primary text-white">Skills</a>
               </li>
               <li class="group">
-                <a href="#skills"
-                  class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary dark:text-white">Skills</a>
-              </li>
-              <li class="flex items-center pl-8">
-                <div class="flex">
-                  <span class="mr-2 text-sm text-slate-500 dark:text-slate-400">light</span>
-                  <input type="checkbox" class="hidden" id="dark-toggle" />
-                  <label for="dark-toggle">
-                    <div
-                      class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1 dark:bg-slate-400">
-                      <div
-                        class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out dark:bg-slate-700">
-                      </div>
-                    </div>
-                  </label>
-                  <span class="ml-2 text-sm text-slate-500 dark:text-slate-400">dark</span>
-                </div>
+                <a href="#portfolio" class="text-base py-2 mx-8 flex group-hover:text-primary text-white">Portfolio</a>
               </li>
             </ul>
           </nav>
@@ -73,19 +44,19 @@
   <!-- Header End -->
 
   <!-- Hero Section Start -->
-  <section id="home" class="pt-36 dark:bg-slate-900">
+  <section id="home" class="pt-36 bg-slate-900">
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="text-lg text-primary md:text-xl lg:text-2xl">
             Halo Semua 👋, Saya
-            <span class="font-bold block text-4xl text-slate-900 mt-1 mb-2 lg:text-5xl dark:text-white">Fazri Egi
+            <span class="font-bold block text-4xl text-white mt-1 mb-2 lg:text-5xl">Fazri Egi
               Ramadhan</span>
           </h1>
           <h2 class="mb-5 font-medium text-lg text-slate-500 lg:text-2xl">
             Student & Back End Enthusiast
           </h2>
-          <p class="mb-8 text-slate-500 leading-relaxed dark:text-slate-400">
+          <p class="mb-8 text-slate-400 leading-relaxed">
             Mahasiswa tingkat akhir jurusan Teknik Informatika dengan IPK 3,91. Saya telah terjun
             di dunia programming sejak 2020 dan menggunakan beberapa bahasa pemrograman untuk
             membuat website dan API.
@@ -146,13 +117,98 @@
   </section>
   <!-- Hero Section End -->
 
+  <!-- Tools Section Start -->
+  <section id="skills" class="pt-36 pb-32 bg-slate-700">
+    <div class="container">
+      <div class="w-full px-4">
+        <div class="mx-auto text-center mb-16">
+          <h4 class="font-semibold text-lg text-primary mb-2">Skills</h4>
+          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">
+            Tools Yang Dikuasai
+          </h2>
+        </div>
+      </div>
+
+      <div class="w-full px4">
+        <div class="flex flex-wrap items-center justify-center">
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/html.svg" alt="HTML 5" width="75" title="HTML 5" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/css.svg" alt="CSS 3" width="75" title="CSS 3" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/javascript.svg" alt="JavaScript" width="85" title="JavaScript" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/go.svg" alt="Go Programming Language" width="175"
+              title="Go Programming Language" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/php.svg" alt="PHP" width="85" title="PHP" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/python.svg" alt="Python" width="85" title="Python" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/bootstrap.svg" alt="Bootstrap" width="85" title="Bootstrap" />
+          </a>
+          <!-- <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/tailwind.svg" alt="Tailwind CSS" width="85" title="Tailwind CSS" />
+          </a> -->
+          <!-- <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/jquery.svg" alt="jQuery" width="85" title="jQuery" />
+          </a> -->
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/codeigniter.svg" alt="CodeIgniter" width="85" title="CodeIgniter" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/gorm.svg" alt="GORM" width="205" title="GORM" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/sql.svg" alt="SQL" width="75" title="SQL Database" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/git.svg" alt="Git" width="75" title="Git" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/docker.svg" alt="Docker" width="75" title="Docker" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/linux.svg" alt="Linux" width="75" title="Linux" />
+          </a>
+          <a href="##"
+            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+            <img src="img/portfolio/stack/aws.svg" alt="AWS" width="75" title="AWS" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tools Section End -->
+
   <!-- Portfolio Section Start -->
-  <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+  <section id="portfolio" class="pt-36 pb-16 bg-slate-800">
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
           <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-          <h2 class="font-bold text-slate-900 text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl ">
             Project Terbaru
           </h2>
           <p class="font-medium text-slate-500 md:text-lg">
@@ -168,10 +224,10 @@
           <div class="rounded-md shadow-md overflow-hidden">
             <img src="img/portfolio/prevent.png" alt="Mental Health Care" width="w-full" />
           </div>
-          <h3 class="font-semibold text-xl text-slate-900 mt-5 dark:text-white">
-            Mental Health Care
+          <h3 class="font-semibold text-xl mt-5 text-white">
+            <a href="https://github.com/Kelompok-3-Capstone-Alterra-2023" target="_blank">Mental Health Care</a>
           </h3>
-          <h4 class="font-semibold text-slate-900 mb-3 dark:text-slate-400">
+          <h4 class="font-semibold mb-3 text-slate-400">
             Back End Developer
           </h4>
           <p class="font-medium text-base text-slate-500">
@@ -181,7 +237,7 @@
             aplikasi ini menawarkan fitur-fitur seperti: Artikel terkait
             kesehatan mental, dan Konsultasi dengan psikolog.
           </p>
-          <h3 class="font-semibold text-lg text-slate-900 mt-5 mb-3 dark:text-white">
+          <h3 class="font-semibold text-lg mt-5 mb-3 text-white">
             Tech Stack
           </h3>
           <div class="flex flex-wrap">
@@ -195,7 +251,7 @@
             </a>
             <a href="##"
               class="mx-2 mr-3 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
-              <img src="img/portfolio/stack/mysql.svg" alt="MySQL" width="30" title="MySQL" />
+              <img src="img/portfolio/stack/mysql.svg" alt="MySQL" width="40" title="MySQL" />
             </a>
             <a href="##"
               class="mx-2 mr-3 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
@@ -228,17 +284,17 @@
           <div class="rounded-md shadow-md overflow-hidden">
             <img src="img/portfolio/apotek.jpg" alt="Apotek Online" width="w-full" />
           </div>
-          <h3 class="font-semibold text-xl text-slate-900 mt-5 dark:text-white">
+          <h3 class="font-semibold text-xl mt-5 text-white">
             Apotek Online
           </h3>
-          <h4 class="font-semibold text-slate-900 mb-3 dark:text-slate-400">
+          <h4 class="font-semibold mb-3 text-slate-400">
             Back End Developer
           </h4>
           <p class="font-medium text-base text-slate-500">
-            Apotek online merupakan APP untuk memberikan kemudahan bagi pelanggan yang ingin membeli
-            obat-obatan tanpa harus keluar rumah. Terutama bagi mereka yang tidak memiliki waktu luang.
+            Apotek online merupakan API untuk web application apotek yang dapat memberikan kemudahan bagi pelanggan yang
+            ingin membeli obat-obatan tanpa harus keluar rumah. Terutama bagi mereka yang tidak memiliki waktu luang.
           </p>
-          <h3 class="font-semibold text-lg text-slate-900 mt-5 mb-3 dark:text-white">
+          <h3 class="font-semibold text-lg mt-5 mb-3 text-white">
             Tech Stack
           </h3>
           <div class="flex flex-wrap">
@@ -252,7 +308,7 @@
             </a>
             <a href="##"
               class="mx-2 mr-3 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
-              <img src="img/portfolio/stack/mysql.svg" alt="MySQL" width="30" title="MySQL" />
+              <img src="img/portfolio/stack/mysql.svg" alt="MySQL" width="40" title="MySQL" />
             </a>
             <a href="##"
               class="mx-2 mr-3 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
@@ -288,10 +344,10 @@
           <div class="rounded-md shadow-md overflow-hidden">
             <img src="img/portfolio/camilin.png" alt="Camilin" width="w-full" />
           </div>
-          <h3 class="font-semibold text-xl text-slate-900 mt-5 dark:text-white">
-            Camilin
+          <h3 class="font-semibold text-xl mt-5 text-white">
+            <a href="https://github.com/fazriegi/camilin" target="_blank">Camilin</a>
           </h3>
-          <h4 class="font-semibold text-slate-900 mb-3 dark:text-slate-400">
+          <h4 class="font-semibold mb-3 text-slate-400">
             Front End Developer
           </h4>
           <p class="font-medium text-base text-slate-500">
@@ -299,7 +355,7 @@
             menargetkan kalangan muda terutama para mahasiswa yang hoby nonton film dan kumpul
             bareng teman ataupun kelaurga.
           </p>
-          <h3 class="font-semibold text-lg text-slate-900 mt-5 mb-3 dark:text-white">
+          <h3 class="font-semibold text-lg mt-5 mb-3 text-white">
             Tech Stack
           </h3>
           <div class="flex flex-wrap">
@@ -337,10 +393,10 @@
           <div class="rounded-md shadow-md overflow-hidden">
             <img src="img/portfolio/silokernf.png" alt="SilokerNF" width="w-full" />
           </div>
-          <h3 class="font-semibold text-xl text-slate-900 mt-5 dark:text-white">
-            Siloker NF
+          <h3 class="font-semibold text-xl mt-5 text-white">
+            <a href="https://github.com/fazriegi/Project-Akhir-CI-Siloker-NF/tree/dev" target="_blank">Siloker NF</a>
           </h3>
-          <h4 class="font-semibold text-slate-900 mb-3 dark:text-slate-400">
+          <h4 class="font-semibold mb-3 text-slate-400">
             Full Stack Developer
           </h4>
           <p class="font-medium text-base text-slate-500">
@@ -349,7 +405,7 @@
             loker.
           </p>
 
-          <h3 class="font-semibold text-lg text-slate-900 mt-5 mb-3 dark:text-white">
+          <h3 class="font-semibold text-lg mt-5 mb-3 text-white">
             Tech Stack
           </h3>
           <div class="flex flex-wrap">
@@ -383,7 +439,7 @@
             </a>
             <a href="##"
               class="mx-2 mr-3 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
-              <img src="img/portfolio/stack/mysql.svg" alt="MySQL" width="30" title="MySQL" />
+              <img src="img/portfolio/stack/mysql.svg" alt="MySQL" width="45" title="MySQL" />
             </a>
             <a href="##"
               class="mx-2 mr-3 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100">
@@ -399,16 +455,16 @@
           <div class="rounded-md shadow-md overflow-hidden">
             <img src="img/portfolio/winkel.png" alt="Winkel" width="w-full" />
           </div>
-          <h3 class="font-semibold text-xl text-slate-900 mt-5 dark:text-white">
-            Winkel
+          <h3 class="font-semibold text-xl mt-5 text-white">
+            <a href="https://github.com/fazriegi/Fazri1.github.io" target="_blank">Winkel</a>
           </h3>
-          <h4 class="font-semibold text-slate-900 mb-3 dark:text-slate-400">
+          <h4 class="font-semibold mb-3 text-slate-400">
             Front End Developer
           </h4>
           <p class="font-medium text-base text-slate-500">
             Winkel merupakan sebuah website landing page untuk e-commerce umkm.
           </p>
-          <h3 class="font-semibold text-lg text-slate-900 mt-5 mb-3 dark:text-white">
+          <h3 class="font-semibold text-lg mt-5 mb-3 text-white">
             Tech Stack
           </h3>
           <div class="flex flex-wrap">
@@ -438,91 +494,6 @@
     </div>
   </section>
   <!-- Portfolio Section End -->
-
-  <!-- Tools Section Start -->
-  <section id="skills" class="pt-36 pb-32 bg-slate-700 dark:bg-slate-700">
-    <div class="container">
-      <div class="w-full px-4">
-        <div class="mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2">Skills</h4>
-          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
-            Tools Yang Dikuasai
-          </h2>
-        </div>
-      </div>
-
-      <div class="w-full px4">
-        <div class="flex flex-wrap items-center justify-center">
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/html.svg" alt="HTML 5" width="100" title="HTML 5" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/css.svg" alt="CSS 3" width="100" title="CSS 3" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/javascript.svg" alt="JavaScript" width="110" title="JavaScript" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/go.svg" alt="Go Programming Language" width="200"
-              title="Go Programming Language" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/php.svg" alt="PHP" width="110" title="PHP" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/python.svg" alt="Python" width="110" title="Python" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/bootstrap.svg" alt="Bootstrap" width="110" title="Bootstrap" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/tailwind.svg" alt="Tailwind CSS" width="110" title="Tailwind CSS" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/jquery.svg" alt="jQuery" width="110" title="jQuery" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/codeigniter.svg" alt="CodeIgniter" width="110" title="CodeIgniter" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/gorm.svg" alt="GORM" width="280" title="GORM" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/sql.svg" alt="SQL" width="110" title="SQL Database" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/git.svg" alt="Git" width="110" title="Git" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/docker.svg" alt="Docker" width="110" title="Docker" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/linux.svg" alt="Linux" width="110" title="Linux" />
-          </a>
-          <a href="##"
-            class="mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-            <img src="img/portfolio/stack/aws.svg" alt="AWS" width="110" title="AWS" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Tools Section End -->
 
   <!-- Footer Start -->
   <footer class="pt-14 pb-10 bg-slate-900">
