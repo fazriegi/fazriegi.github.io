@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-after {
+  @apply after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-sky-500 after:transition-transform after:ease-out after:duration-[250ms];
+  transform-origin: bottom center;
+}
+
+.nav-hover {
+  @apply hover:after:scale-x-100;
+  transform-origin: bottom center;
+}
+
+.nav-scroll {
+  @apply fixed z-10 bg-slate-900 backdrop-blur-sm bg-opacity-50 shadow-slate-900 border-b-2 border-slate-700 dark:border-slate-200 dark:shadow-white;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.2);
+}
