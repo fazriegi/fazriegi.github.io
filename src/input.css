@@ -2,27 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar-fixed {
-  @apply fixed z-[9999] bg-slate-900 backdrop-blur-sm bg-opacity-50 shadow-dark;
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+.nav-after {
+  @apply after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[2px] after:bottom-0 after:left-0 after:bg-sky-500 after:transition-transform after:ease-out after:duration-[250ms];
+  transform-origin: bottom center;
 }
 
-.hamburger-line {
-  @apply w-[30px] h-[2px] my-2 block bg-slate-900 transition duration-300 ease-in-out dark:bg-slate-300;
+.nav-hover {
+  @apply hover:after:scale-x-100;
+  transform-origin: bottom center;
 }
 
-.hamburger-active>span:nth-child(1) {
-  @apply rotate-45;
-}
-
-.hamburger-active>span:nth-child(2) {
-  @apply scale-0;
-}
-
-.hamburger-active>span:nth-child(3) {
-  @apply -rotate-45;
-}
-
-#dark-toggle:checked~label div.toggle-circle {
-  @apply translate-x-3;
+.nav-scroll {
+  @apply fixed z-10 bg-slate-900 backdrop-blur-sm bg-opacity-50 shadow-slate-900 border-b-2 border-slate-700 dark:border-slate-200 dark:shadow-white;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.2);
 }
