@@ -20,3 +20,7 @@
 .social-links {
   @apply flex text-xl justify-center items-center w-10 h-10 bg-slate-700 mr-2 rounded-[50%] hover:bg-sky-500;
 }
+
+.tools {
+  @apply inline-block text-white text-lg bg-sky-700 px-3 py-1 mr-1 my-2 rounded-3xl hover:opacity-80 cursor-pointer;
+}
